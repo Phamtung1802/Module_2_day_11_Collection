@@ -2,10 +2,7 @@ package hashmaphashset;
 
 import hashmaphashset.Student;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
 
@@ -33,5 +30,6 @@ public class Main {
         for(Student student : students){
             System.out.println(student.toString());
         }
+        Collections.so
     }
 }
