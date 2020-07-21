@@ -13,9 +13,11 @@ public class Main {
         Map< String,Integer> wordMap = new TreeMap<>();
         for (Integer i = 0; i < vanBanSauTach.length; i++) {
             if(wordMap.containsKey(vanBanSauTach[i].toLowerCase())){
-                wordMap.;
+                wordMap.put(vanBanSauTach[i].toLowerCase(),wordMap.get(vanBanSauTach[i].toLowerCase())+1);
+
             }
-            wordMap.put(vanBanSauTach[i].toLowerCase(),i);
+            else wordMap.put(vanBanSauTach[i].toLowerCase(),1);
+            System.out.println(vanBanSauTach[i].toLowerCase());
         }
         System.out.println(vanBanSauTach.length);
         System.out.println(wordMap);
